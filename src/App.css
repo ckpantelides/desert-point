@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap");
+
 .App {
   text-align: center;
 }
@@ -20,3 +22,483 @@
 .App-link {
   color: #09d3ac;
 }
+
+body {
+  background: #0f0f0f;
+}
+
+/* ------------------------------------------------------------------ */
+/*   Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  background: #161415 url(.\images\homepage1.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* vertically center banner section */
+header:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+header .banner-text {
+  width: 100%;
+}
+
+header .banner-text h1 {
+  font: 130px "opensans-bold", sans-serif;
+  /* font: 150px "Anton", sans-serif; */
+  color: #fff;
+  margin: 0px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+header .banner-text h3 {
+  font: 18px/1.9em "librebaskerville-regular", serif;
+  color: #a8a8a8;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header .banner-text h3 span,
+header .banner-text h3 a {
+  color: #fff;
+}
+
+header .banner-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #2f2d2e;
+  border-color: rgba(150, 150, 150, 0.1);
+}
+
+/* header social links */
+header .social {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+header .social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+header .social li a {
+  color: #fff;
+}
+header .social li a:hover {
+  color: #11abb0;
+}
+
+/* scrolldown link */
+header .scrolldown a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .scrolldown a:hover {
+  color: #11abb0;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Navigation
+/* ------------------------------------------------------------------ */
+
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 12px "opensans-bold", sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.opaque {
+  background-color: #333;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn {
+  display: none;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+  /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+
+ul#nav li.current a {
+  color: #f06000;
+}
+
+/* ------------------------------------------------------------------ */
+/*  About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+  background: #2b2b2b;
+  padding-top: 48px;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#about a,
+#about a:visited {
+  color: #fff;
+}
+#about a:hover,
+#about a:focus {
+  color: #11abb0;
+}
+
+#about h2 {
+  font: 22px/30px "opensans-bold", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+#about p {
+  line-height: 30px;
+  color: #7a7a7a;
+}
+
+#about .profile-pic {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+#about .contact-details {
+  width: 41.66667%;
+}
+#about .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#about .main-col {
+  padding-right: 5%;
+}
+#about .download .button {
+  margin-top: 6px;
+  background: #444;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#about .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Grid
+/* ------------------------------------------------------------------ */
+
+.row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+/* fixed width for IE8 */
+.ie .row {
+  width: 1000px;
+}
+
+.narrow .row {
+  max-width: 980px;
+}
+
+.row .row {
+  width: auto;
+  max-width: none;
+  margin: 0 -20px;
+}
+
+/* row clearing */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.column,
+.columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+}
+.column.centered,
+.columns.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* removed gutters */
+.row.collapsed > .column,
+.row.collapsed > .columns,
+.column.collapsed,
+.columns.collapsed {
+  padding: 0;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+[class*="column"] + [class*="column"].end {
+  float: right;
+}
+
+/* column widths */
+.row .one {
+  width: 8.33333%;
+}
+.row .two {
+  width: 16.66667%;
+}
+.row .three {
+  width: 25%;
+}
+.row .four {
+  width: 33.33333%;
+}
+.row .five {
+  width: 41.66667%;
+}
+.row .six {
+  width: 50%;
+}
+.row .seven {
+  width: 58.33333%;
+}
+.row .eight {
+  width: 66.66667%;
+}
+.row .nine {
+  width: 75%;
+}
+.row .ten {
+  width: 83.33333%;
+}
+.row .eleven {
+  width: 91.66667%;
+}
+.row .twelve {
+  width: 100%;
+}
+
+/* Offsets */
+.row .offset-1 {
+  margin-left: 8.33333%;
+}
+.row .offset-2 {
+  margin-left: 16.66667%;
+}
+.row .offset-3 {
+  margin-left: 25%;
+}
+.row .offset-4 {
+  margin-left: 33.33333%;
+}
+.row .offset-5 {
+  margin-left: 41.66667%;
+}
+.row .offset-6 {
+  margin-left: 50%;
+}
+.row .offset-7 {
+  margin-left: 58.33333%;
+}
+.row .offset-8 {
+  margin-left: 66.66667%;
+}
+.row .offset-9 {
+  margin-left: 75%;
+}
+.row .offset-10 {
+  margin-left: 83.33333%;
+}
+.row .offset-11 {
+  margin-left: 91.66667%;
+}
+
+/* Push/Pull */
+.row .push-1 {
+  left: 8.33333%;
+}
+.row .pull-1 {
+  right: 8.33333%;
+}
+.row .push-2 {
+  left: 16.66667%;
+}
+.row .pull-2 {
+  right: 16.66667%;
+}
+.row .push-3 {
+  left: 25%;
+}
+.row .pull-3 {
+  right: 25%;
+}
+.row .push-4 {
+  left: 33.33333%;
+}
+.row .pull-4 {
+  right: 33.33333%;
+}
+.row .push-5 {
+  left: 41.66667%;
+}
+.row .pull-5 {
+  right: 41.66667%;
+}
+.row .push-6 {
+  left: 50%;
+}
+.row .pull-6 {
+  right: 50%;
+}
+.row .push-7 {
+  left: 58.33333%;
+}
+.row .pull-7 {
+  right: 58.33333%;
+}
+.row .push-8 {
+  left: 66.66667%;
+}
+.row .pull-8 {
+  right: 66.66667%;
+}
+.row .push-9 {
+  left: 75%;
+}
+.row .pull-9 {
+  right: 75%;
+}
+.row .push-10 {
+  left: 83.33333%;
+}
+.row .pull-10 {
+  right: 83.33333%;
+}
+.row .push-11 {
+  left: 91.66667%;
+}
+.row .pull-11 {
+  right: 91.66667%;
+}
+
+/* block grids
+--------------------------------------------------------------------- */
+.bgrid-sixths [class*="column"] {
+  width: 16.66667%;
+}
+.bgrid-quarters [class*="column"] {
+  width: 25%;
+}
+.bgrid-thirds [class*="column"] {
+  width: 33.33333%;
+}
+.bgrid-halves [class*="column"] {
+  width: 50%;
+}
+
+[class*="bgrid"] [class*="column"] + [class*="column"]:last-child {
+  float: left;
+}
+
+/* Left clearing for block grid columns - columns that changes width in
+different screen sizes. Allows columns with different heights to align
+properly.
+--------------------------------------------------------------------- */
+.first {
+  clear: left;
+} /* first column in default screen */
+.s-first {
+  clear: none;
+} /* first column in smaller screens */
