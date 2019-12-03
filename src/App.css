@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 .App {
   text-align: center;
@@ -61,12 +62,17 @@ header .banner {
 }
 
 header .banner-text {
-  width: 100%;
+  border: white 4px solid;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 header .banner-text h1 {
-  font: 130px "opensans-bold", sans-serif;
-  /* font: 150px "Anton", sans-serif; */
+  /*  font: 130px "opensans-bold", sans-serif; */
+  font: 90px "Montserrat", sans-serif;
+  /* font: 90px "Anton", sans-serif; */
   color: #fff;
   margin: 0px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
@@ -219,7 +225,7 @@ ul#nav li.current a {
   background: #2b2b2b;
   padding-top: 48px;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #about a,
@@ -250,24 +256,45 @@ ul#nav li.current a {
 #about .contact-details {
   width: 41.66667%;
 }
-#about .download {
-  width: 58.33333%;
-  padding-top: 6px;
-}
+
 #about .main-col {
   padding-right: 5%;
 }
-#about .download .button {
-  margin-top: 6px;
-  background: #444;
+
+/* ------------------------------------------------------------------ */
+/*  Packages
+/* ------------------------------------------------------------------ */
+
+#packages {
+  background: #3d3d3d;
+  padding-top: 48px;
+  overflow: hidden;
+  min-height: 100vh;
 }
-#about .download .button:hover {
-  background: #fff;
-  color: #2b2b2b;
+
+#packages .package-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
-#about .download .button i {
-  margin-right: 15px;
-  font-size: 20px;
+
+#packages .package-item {
+  background: #5c5c5c;
+  width: 40%;
+  margin: 2% 5%;
+  height: 60vh;
+}
+
+#packages h2 {
+  font: 22px/30px "opensans-bold", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+#packages p {
+  line-height: 30px;
+  color: #7a7a7a;
+  margin: 2px;
 }
 
 /* ------------------------------------------------------------------ */

@@ -1,4 +1,7 @@
 import React from "react";
+// scrollspy detects which section is showing, and highlights the navbar items
+// appropriately
+import Scrollspy from "react-scrollspy";
 
 const Header = () => (
   <header id="home">
@@ -9,44 +12,44 @@ const Header = () => (
       <a className="mobile-btn" href="#home" title="Hide navigation">
         Hide navigation
       </a>
-
       <ul id="nav" className="nav">
-        <li className="current">
-          <a className="smoothscroll" href="#home">
-            Home
-          </a>
-        </li>
-        <li>
-          <a className="smoothscroll" href="#about">
-            About
-          </a>
-        </li>
-        <li>
-          <a className="smoothscroll" href="#packages">
-            Packages
-          </a>
-        </li>
-        <li>
-          <a className="smoothscroll" href="#gallery">
-            Gallery
-          </a>
-        </li>
-        <li>
-          <a className="smoothscroll" href="#booking">
-            Booking
-          </a>
-        </li>
-        <li>
-          <a className="smoothscroll" href="#contact">
-            Contact
-          </a>
-        </li>
+        <Scrollspy
+          items={["home", "about", "packages"]}
+          currentClassName="current"
+        >
+          <li>
+            <a className="smoothscroll" href="#home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a className="smoothscroll" href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a className="smoothscroll" href="#packages">
+              Packages
+            </a>
+          </li>
+          <li>
+            <a className="smoothscroll" href="#gallery">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a className="smoothscroll" href="#booking">
+              Booking/Contact
+            </a>
+          </li>
+        </Scrollspy>
       </ul>
     </nav>
-
     <div className="row banner">
       <div className="banner-text">
-        <h1 className="responsive-headline">SURF HOUSE DESERT POINT</h1>
+        <h1>SURF CAMP</h1>
+        <h1>MOKNARI</h1>
+        <h1>MOROCCO</h1>
       </div>
     </div>
   </header>
