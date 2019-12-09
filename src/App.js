@@ -3,6 +3,7 @@ import NavBackground from "./components/NavBackground";
 import Header from "./components/Header";
 import About from "./components/About";
 import Packages from "./components/Packages";
+import Booking from "./components/Booking";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <About />
       <Packages />
+      <Booking />
     </div>
   );
 }

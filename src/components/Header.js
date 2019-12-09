@@ -14,7 +14,7 @@ const Header = () => (
       </a>
       <ul id="nav" className="nav">
         <Scrollspy
-          items={["home", "about", "packages"]}
+          items={["home", "about", "packages", "booking"]}
           currentClassName="current"
         >
           <li>
@@ -30,11 +30,6 @@ const Header = () => (
           <li>
             <a className="smoothscroll" href="#packages">
               Packages
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#gallery">
-              Gallery
             </a>
           </li>
           <li>

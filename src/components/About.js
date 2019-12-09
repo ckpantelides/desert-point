@@ -6,9 +6,8 @@ const About = () => (
       <div className="eight columns">
         <h2>About</h2>
         <p>
-          Looking for a different type of holiday? Want to experience a real
-          Moroccan adventure and learn how to surf? Welcome to Moknari, a small
-          village that belongs to our family. It's located on a small desert,
+          Want to experience a real Moroccan adventure and learn how to surf?
+          Come to Moknari, our small family village. We're on a desert
           surrounded by mountains with a private beach spot! We'll teach you how
           to surf, take you hiking, camel riding and fishing, teach you to make
           argon oil…
@@ -20,8 +19,6 @@ const About = () => (
         </p>
         <p>
           Desert point surf house, not only a surf school - a life experience!
-          Be ready for cultural (and food) immersion. Enjoy your holiday a
-          different way!
         </p>
         <h2>Contact Details</h2>
         <p className="address">

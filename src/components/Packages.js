@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => (
+const Packages = () => (
   <section id="packages">
     <h2>Packages</h2>
     <p>
@@ -21,21 +21,33 @@ const About = () => (
         <h3>€360</h3>
         <p>for beginners and intermediate surfers</p>
         <ul>
-          <li>Agadir airport or bus station transfer </li>
-          <li>Board and wetsuit</li>
-          <li>6 days of surf lessons × 2 hours</li>
+          <li>Transfer to & from Agadir airport/bus station</li>
+          <li>Surfboard and wetsuit</li>
+          <li>6 days of surf lessons</li>
+          <li>6 nights accommodation</li>
+          <li>All meals (breakfast, lunch and dinner)</li>
           <li>Transfer to the best surf spots</li>
-          <li>
-            6 nights accommodation with full board (breakfast, lunch and dinner)
-          </li>
           <li>Visit to Agadir souk with other excursions</li>
         </ul>
+        <button>BOOK NOW</button>
       </div>
       <div class="package-item">
         <h2>SURF GUIDING</h2>
+        <h3>€320</h3>
+        <p>for experienced surfers</p>
+        <ul>
+          <li>Transfer to & from Agadir airport/bus station</li>
+          <li>Surfboard/wetsuit - if needed</li>
+          <li>6 days of surf guiding</li>
+          <li>7 nights accommodation</li>
+          <li>All meals (breakfast, lunch and dinner)</li>
+          <li>Transfer to the best surf spots</li>
+          <li>Visit to Agadir souk with other excursions</li>
+        </ul>
+        <button>BOOK NOW</button>
       </div>
     </div>
   </section>
 );
 
-export default About;
+export default Packages;

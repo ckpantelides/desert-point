@@ -297,6 +297,39 @@ ul#nav li.current a {
   margin: 2px;
 }
 
+#packages ul {
+  list-style-type: square;
+  color: #fff;
+}
+
+#packages .package-container {
+  color: #fff;
+}
+
+#packages button {
+  /*font-family: "Montserrat", sans-serif;*/
+  /* font-weight: bold;*/
+  font-family: "opensans-bold", sans-serif;
+  border: solid 1px grey;
+  padding: 5px;
+  letter-spacing: 2.5px;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Booking
+/* ------------------------------------------------------------------ */
+
+#booking {
+  background: #707070;
+  padding-top: 48px;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#booking fieldset {
+  border: none;
+}
+
 /* ------------------------------------------------------------------ */
 /*  Grid
 /* ------------------------------------------------------------------ */
