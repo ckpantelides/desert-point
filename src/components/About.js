@@ -17,9 +17,7 @@ const About = () => (
           surfers, from age 8 to 50. We also offer surf guiding for experienced
           surfers, taking you to the best spots around
         </p>
-        <p>
-          Desert point surf house, not only a surf school - a life experience!
-        </p>
+        <p>Surf camp Moknari, not only a surf school - a life experience!</p>
         <h2>Contact Details</h2>
         <p className="address">
           <span>Desert Point Surf House</span>

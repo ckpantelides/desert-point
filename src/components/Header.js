@@ -1,7 +1,8 @@
 import React from "react";
 // scrollspy detects which section is showing, and highlights the navbar items
 // appropriately
-import Scrollspy from "react-scrollspy";
+// import Scrollspy from "react-scrollspy";
+import { Link } from "react-scroll";
 
 const Header = () => (
   <header id="home">
@@ -13,31 +14,50 @@ const Header = () => (
         Hide navigation
       </a>
       <ul id="nav" className="nav">
-        <Scrollspy
-          items={["home", "about", "packages", "booking"]}
-          currentClassName="current"
-        >
-          <li>
-            <a className="smoothscroll" href="#home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#packages">
-              Packages
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#booking">
-              Booking/Contact
-            </a>
-          </li>
-        </Scrollspy>
+        <li>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            HOME
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            ABOUT
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="packages"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            PACKAGES
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="booking"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            BOOKING/CONTACT
+          </Link>
+        </li>
       </ul>
     </nav>
     <div className="row banner">

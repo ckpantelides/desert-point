@@ -2,56 +2,59 @@ import React from "react";
 
 const Booking = () => (
   <section id="booking">
-    <h1>Booking</h1>
+    <h1>Booking request</h1>
     <form action="" method="post" id="contactForm" name="contactForm">
       <fieldset>
         <div>
-          <label htmlFor="contactName">
-            Name <span className="required">*</span>
-          </label>
+          <label htmlFor="contactName">Name</label>
           <input
             type="text"
             defaultValue=""
-            size="35"
             id="contactName"
             name="contactName"
           />
         </div>
 
         <div>
-          <label htmlFor="contactEmail">
-            Email <span className="required">*</span>
-          </label>
+          <label htmlFor="contactEmail">Email</label>
           <input
             type="text"
             defaultValue=""
-            size="35"
             id="contactEmail"
             name="contactEmail"
           />
         </div>
 
         <div>
-          <label htmlFor="contactSubject">Subject</label>
+          <label htmlFor="contactTelephone">Telephone</label>
           <input
             type="text"
             defaultValue=""
-            size="35"
             id="contactSubject"
             name="contactSubject"
           />
         </div>
-
         <div>
-          <label htmlFor="contactMessage">
-            Message <span className="required">*</span>
-          </label>
-          <textarea
-            cols="50"
-            rows="15"
-            id="contactMessage"
-            name="contactMessage"
-          ></textarea>
+          <label htmlFor="contactDates">Dates</label>
+          <input
+            type="text"
+            defaultValue=""
+            id="contactSubject"
+            name="contactSubject"
+          />
+        </div>
+        <div>
+          <label htmlFor="contactPackage">Package</label>
+          <input
+            type="text"
+            defaultValue=""
+            id="contactSubject"
+            name="contactSubject"
+          />
+        </div>
+        <div>
+          <label htmlFor="contactMessage">Message</label>
+          <textarea id="contactMessage" name="contactMessage"></textarea>
         </div>
 
         <div>

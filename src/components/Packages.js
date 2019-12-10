@@ -19,7 +19,7 @@ const Packages = () => (
       <div class="package-item">
         <h2>SURF LESSONS</h2>
         <h3>€360</h3>
-        <p>for beginners and intermediate surfers</p>
+        <p>for beginner and intermediate surfers</p>
         <ul>
           <li>Transfer to & from Agadir airport/bus station</li>
           <li>Surfboard and wetsuit</li>
@@ -29,7 +29,9 @@ const Packages = () => (
           <li>Transfer to the best surf spots</li>
           <li>Visit to Agadir souk with other excursions</li>
         </ul>
-        <button>BOOK NOW</button>
+        <button>
+          <a href="#booking">Book now</a>
+        </button>
       </div>
       <div class="package-item">
         <h2>SURF GUIDING</h2>
@@ -44,7 +46,9 @@ const Packages = () => (
           <li>Transfer to the best surf spots</li>
           <li>Visit to Agadir souk with other excursions</li>
         </ul>
-        <button>BOOK NOW</button>
+        <button>
+          <a href="#booking">Book now</a>
+        </button>
       </div>
     </div>
   </section>

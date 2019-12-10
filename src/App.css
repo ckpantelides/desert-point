@@ -213,6 +213,10 @@ ul#nav li a:active {
   background-color: transparent !important;
 }
 
+ul#nav li > .active {
+  color: #f06000;
+}
+
 ul#nav li.current a {
   color: #f06000;
 }
@@ -315,6 +319,11 @@ ul#nav li.current a {
   letter-spacing: 2.5px;
 }
 
+#packages a {
+  text-decoration: none;
+  color: black;
+}
+
 /* ------------------------------------------------------------------ */
 /*  Booking
 /* ------------------------------------------------------------------ */
@@ -328,6 +337,25 @@ ul#nav li.current a {
 
 #booking fieldset {
   border: none;
+}
+
+#booking input,
+#booking textarea {
+  width: 300px;
+  margin: 10px;
+}
+
+#booking label {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+
+#booking button {
+  font-family: "opensans-bold", sans-serif;
+  border: solid 1px grey;
+  padding: 5px;
+  letter-spacing: 2.5px;
 }
 
 /* ------------------------------------------------------------------ */
