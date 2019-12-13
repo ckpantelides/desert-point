@@ -1,77 +1,87 @@
 import React from "react";
+import useBookingForm from "./CustomHooks";
 
-const Booking = () => (
-  <section id="booking">
-    <h1>Booking request</h1>
-    <form action="" method="post" id="contactForm" name="contactForm">
-      <fieldset>
-        <div>
-          <label htmlFor="contactName">Name</label>
-          <input
-            type="text"
-            defaultValue=""
-            id="contactName"
-            name="contactName"
-          />
-        </div>
+const Booking = () => {
+  const signup = () => {
+    alert(`Booking request sent
+           Name: ${inputs.name}
+           Email: ${inputs.email}`);
+  };
+  const { inputs, handleInputChange, handleSubmit } = useBookingForm(
+    { name: "", email: "", telephone: "", dates: "", package: "", message: "" },
+    signup
+  );
 
-        <div>
-          <label htmlFor="contactEmail">Email</label>
-          <input
-            type="text"
-            defaultValue=""
-            id="contactEmail"
-            name="contactEmail"
-          />
-        </div>
+  return (
+    <section id="booking">
+      <h1>Booking request</h1>
+      <form onSubmit={handleSubmit}>
+        <fieldset>
+          <div>
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              onChange={handleInputChange}
+              value={inputs.name}
+              required
+            />
+          </div>
 
-        <div>
-          <label htmlFor="contactTelephone">Telephone</label>
-          <input
-            type="text"
-            defaultValue=""
-            id="contactSubject"
-            name="contactSubject"
-          />
-        </div>
-        <div>
-          <label htmlFor="contactDates">Dates</label>
-          <input
-            type="text"
-            defaultValue=""
-            id="contactSubject"
-            name="contactSubject"
-          />
-        </div>
-        <div>
-          <label htmlFor="contactPackage">Package</label>
-          <input
-            type="text"
-            defaultValue=""
-            id="contactSubject"
-            name="contactSubject"
-          />
-        </div>
-        <div>
-          <label htmlFor="contactMessage">Message</label>
-          <textarea id="contactMessage" name="contactMessage"></textarea>
-        </div>
+          <div>
+            <label>Email</label>
+            <input
+              type="text"
+              name="email"
+              onChange={handleInputChange}
+              value={inputs.email}
+              required
+            />
+          </div>
 
-        <div>
-          <button className="submit">Submit</button>
-          <span id="image-loader">
-            <img alt="" src="images/loader.gif" />
-          </span>
-        </div>
-      </fieldset>
-    </form>
+          <div>
+            <label htmlFor="telephone">Telephone</label>
+            <input
+              type="text"
+              name="telephone"
+              onChange={handleInputChange}
+              value={inputs.telephone}
+            />
+          </div>
+          <div>
+            <label>Dates</label>
+            <input
+              type="text"
+              name="dates"
+              onChange={handleInputChange}
+              value={inputs.dates}
+            />
+          </div>
+          <div>
+            <label>Package</label>
+            <input
+              type="text"
+              name="package"
+              onChange={handleInputChange}
+              value={inputs.package}
+            />
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea
+              name="message"
+              onChange={handleInputChange}
+              value={inputs.message}
+            ></textarea>
+          </div>
 
-    <div id="message-warning"> Error</div>
-    <div id="message-success">
-      <i className="fa fa-check"></i>Your message was sent, thank you!
-      <br />
-    </div>
-  </section>
-);
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  );
+};
 
 export default Booking;
