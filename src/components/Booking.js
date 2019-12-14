@@ -1,15 +1,21 @@
 import React from "react";
 import useBookingForm from "./CustomHooks";
+import axios from "axios";
 
 const Booking = () => {
-  const signup = () => {
-    alert(`Booking request sent
-           Name: ${inputs.name}
-           Email: ${inputs.email}`);
+  // callback function called after form below is submitted
+  // sends input data to server via axios
+  const booking = () => {
+    alert(`Booking request sent ${inputs.name}!`);
+
+    axios.post(`http://localhost:8000/post`, { inputs }).then(res => {
+      console.log("Data sent to server");
+    });
   };
+
   const { inputs, handleInputChange, handleSubmit } = useBookingForm(
     { name: "", email: "", telephone: "", dates: "", package: "", message: "" },
-    signup
+    booking
   );
 
   return (
