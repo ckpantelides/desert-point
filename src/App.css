@@ -363,9 +363,33 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #admin {
-  background: #c0c0c0;
-  overflow: hidden;
   min-height: 100vh;
+  min-width: 100vh;
+  background: #c0c0c0;
+  padding: 10px;
+}
+
+#admin .enquiry-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+#admin .enquiry-card {
+  border: black 0.5px solid;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+  background-color: #5c5c5c;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  word-wrap: break-word;
+  overflow-y: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
 /* ------------------------------------------------------------------ */

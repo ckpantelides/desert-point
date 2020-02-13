@@ -14,11 +14,11 @@ const Admin = () => {
   const renderTable = () => {
     return data.map(user => {
       return (
-        <tr>
-          <td>{user.name}</td>
-          <td>{user.email}</td>
-          <td>{user.message}</td>
-        </tr>
+        <div className="enquiry-card">
+          <p>{user.name}</p>
+          <p>{user.email}</p>
+          <p>{user.message}</p>
+        </div>
       );
     });
   };
@@ -27,17 +27,7 @@ const Admin = () => {
     <section id="admin">
       <div>
         <h1 id="title">Admin</h1>
-        <table id="users">
-          {" "}
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Message</th>
-            </tr>
-          </thead>
-          <tbody>{renderTable()}</tbody>
-        </table>
+        <div className="enquiry-card-container">{renderTable()}</div>
       </div>
     </section>
   );
