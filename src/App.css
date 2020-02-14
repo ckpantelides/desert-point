@@ -369,7 +369,7 @@ ul#nav li.current a {
   padding: 10px;
 }
 
-#admin .enquiry-card-container {
+.enquiry-card-container {
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
@@ -378,7 +378,7 @@ ul#nav li.current a {
   overflow-y: auto;
 }
 
-#admin .enquiry-card {
+.enquiry-card {
   border: black 0.5px solid;
   height: 250px;
   width: 250px;
@@ -390,6 +390,7 @@ ul#nav li.current a {
   word-wrap: break-word;
   overflow-y: hidden;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  text-align: center;
 }
 
 /* ------------------------------------------------------------------ */
