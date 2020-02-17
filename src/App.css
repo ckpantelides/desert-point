@@ -347,6 +347,10 @@ ul#nav li.current a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+#booking textarea {
+  vertical-align: middle;
+}
+
 #booking label {
   display: inline-block;
   text-align: right;
@@ -382,10 +386,10 @@ ul#nav li.current a {
 
 .enquiry-card {
   border: black 0.5px solid;
-  height: 250px;
+  height: 270px;
   width: 200px;
   margin: 10px;
-  background-color: #5c5c5c;
+  background-color: rgb(234, 178, 178);
   display: flex;
   position: relative;
   flex-direction: column;
@@ -400,6 +404,13 @@ ul#nav li.current a {
   padding: 0 10px;
 }
 
+.enquiry-card hr {
+  width: 180px;
+  border-color: black;
+  border-width: 0.3px;
+  margin: 3px auto;
+}
+
 .enquiry-header,
 .enquiry-footer {
   font-style: italic;
@@ -407,11 +418,11 @@ ul#nav li.current a {
 }
 
 p.enquiry-footer {
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .read {
-  background-color: rgb(219, 219, 159);
+  background-color: rgb(244, 245, 171);
 }
 
 .enquiryButtonWrapper {

@@ -49,11 +49,13 @@ const Admin = () => {
           </button>
         </div>
         <p className="enquiry-header">Enquiry date: {value.enquirydate}</p>
+        <hr></hr>
         <p>{value.name}</p>
         <p>{value.email}</p>
         <p>{value.telephone}</p>
         <p>{value.dates}</p>
         <p>{value.package}</p>
+        <hr></hr>
         <p className="enquiry-footer">Message:</p>
         <p>{value.message}</p>
       </div>

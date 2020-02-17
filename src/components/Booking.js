@@ -6,10 +6,10 @@ const Booking = () => {
   // callback function called after form below is submitted
   // sends input data to server via axios
   const booking = () => {
-    alert(`Booking enquiry sent ${inputs.name}`);
+    alert(`Booking enquiry sent. Thanks ${inputs.name}`);
 
     axios.post(`http://localhost:8000/post`, { inputs }).then(res => {
-      console.log("Data sent to server");
+      // console.log("Data sent to server");
     });
   };
 
