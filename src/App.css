@@ -343,6 +343,8 @@ ul#nav li.current a {
 #booking textarea {
   width: 300px;
   margin: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #booking label {
@@ -381,7 +383,7 @@ ul#nav li.current a {
 .enquiry-card {
   border: black 0.5px solid;
   height: 250px;
-  width: 250px;
+  width: 200px;
   margin: 10px;
   background-color: #5c5c5c;
   display: flex;
@@ -390,7 +392,22 @@ ul#nav li.current a {
   word-wrap: break-word;
   overflow-y: hidden;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
-  text-align: center;
+  text-align: left;
+}
+
+.enquiry-card p {
+  margin: 0 0 2px 0;
+  padding: 0 10px;
+}
+
+.enquiry-header,
+.enquiry-footer {
+  font-style: italic;
+  font-size: 14px;
+}
+
+p.enquiry-footer {
+  padding-top: 10px;
 }
 
 .read {

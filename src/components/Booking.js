@@ -6,7 +6,7 @@ const Booking = () => {
   // callback function called after form below is submitted
   // sends input data to server via axios
   const booking = () => {
-    alert(`Booking request sent ${inputs.name}!`);
+    alert(`Booking enquiry sent ${inputs.name}`);
 
     axios.post(`http://localhost:8000/post`, { inputs }).then(res => {
       console.log("Data sent to server");
@@ -20,7 +20,7 @@ const Booking = () => {
 
   return (
     <section id="booking">
-      <h1>Booking request</h1>
+      <h1>Booking enquiry</h1>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <div>

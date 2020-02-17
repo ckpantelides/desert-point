@@ -36,7 +36,7 @@ const Admin = () => {
     ({ value, readEnquiry, deleteEnquiry }) => (
       // currently === "true" not true as sqlite not accept boolean
       <div className={`enquiry-card${value.read === "true" ? " read" : ""}`}>
-        <span className="enquiryButtonWrapper">
+        <div className="enquiryButtonWrapper">
           <button className="enquiryButton" type="button" onClick={readEnquiry}>
             <img src="images/tick.png" className="buttonIcon" alt="tick" />
           </button>
@@ -47,9 +47,14 @@ const Admin = () => {
           >
             <img src="images/bin.png" className="buttonIcon" alt="bin" />
           </button>
-        </span>
+        </div>
+        <p className="enquiry-header">Enquiry date: {value.enquirydate}</p>
         <p>{value.name}</p>
         <p>{value.email}</p>
+        <p>{value.telephone}</p>
+        <p>{value.dates}</p>
+        <p>{value.package}</p>
+        <p className="enquiry-footer">Message:</p>
         <p>{value.message}</p>
       </div>
     )
