@@ -86,6 +86,16 @@ const Booking = () => {
           </div>
         </fieldset>
       </form>
+      <a href="https://www.facebook.com/SurfHouseDesertPoint/" target="blank">
+        <img className="social-icon" src="images/f_logo.png" alt="facebook" />
+      </a>
+      <a href="https://www.instagram.com/surfhousedesertpoint/" target="blank">
+        <img
+          className="social-icon"
+          src="images/insta_logo.png"
+          alt="instagram"
+        />
+      </a>
     </section>
   );
 };

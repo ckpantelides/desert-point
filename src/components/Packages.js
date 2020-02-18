@@ -9,17 +9,17 @@ const Packages = () => (
     </p>
     <p>
       If you are looking for bed and breakfast without surfing or any other
-      activities this is also possible.
+      activities this is also available.
     </p>
     <p>
-      Send us a message with what it is you are interested in and we'll get back
+      Send us a message with what it is you're interested in and we'll get back
       to you with the best option to suit you.
     </p>
-    <div class="package-container">
-      <div class="package-item">
+    <div className="package-container">
+      <div className="package-item">
         <h2>SURF LESSONS</h2>
         <h3>€360</h3>
-        <p>for beginner and intermediate surfers</p>
+        <h4>for beginner and intermediate surfers</h4>
         <ul>
           <li>Transfer to & from Agadir airport/bus station</li>
           <li>Surfboard and wetsuit</li>
@@ -36,7 +36,7 @@ const Packages = () => (
       <div class="package-item">
         <h2>SURF GUIDING</h2>
         <h3>€320</h3>
-        <p>for experienced surfers</p>
+        <h4>for experienced surfers</h4>
         <ul>
           <li>Transfer to & from Agadir airport/bus station</li>
           <li>Surfboard/wetsuit - if needed</li>

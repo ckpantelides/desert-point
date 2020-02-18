@@ -32,6 +32,11 @@ const Admin = () => {
     setData(filteredData);
   }
 
+  function saveChanges() {
+    axios.post(`http://localhost:8000/update-enquiries`, { data });
+    console.log("changes sent");
+  }
+
   const SortableEnquiry = SortableElement(
     ({ value, readEnquiry, deleteEnquiry }) => (
       // currently === "true" not true as sqlite not accept boolean
@@ -84,44 +89,23 @@ const Admin = () => {
     <div id="admin">
       <h1>Enquiries</h1>
       <h4>
-        You can drag the enquiries to reorder them, mark them as "read" or
+        Drag the enquiries to reorder them. Tick to mark as "read". Bin to
         delete them
       </h4>
+      <button onClick={saveChanges} className="enquiry-save">
+        {" "}
+        <img src="images/save.png" className="buttonIcon" alt="save" /> Save
+        changes
+      </button>
       <SortableEnquiryContainer
         axis="xy"
         onSortEnd={onSortEnd}
         items={data}
         onSortStart={(_, event) => event.preventDefault()}
-        pressDelay="100"
+        pressDelay="150"
       />
     </div>
   );
 };
 
 export default Admin;
-
-/*
-  const renderEnquiries = () => {
-    return data.map(user => {
-      return (
-        <div className="enquiry-card">
-          <p>{user.name}</p>
-          <p>{user.email}</p>
-          <p>{user.message}</p>
-        </div>
-      );
-    });
-  };
-
-  return (
-    <section id="admin">
-      <div>
-        <h1 id="title">Admin</h1>
-        <div className="enquiry-card-container">{renderEnquiries()}</div>
-      </div>
-    </section>
-  );
-};
-
-export default Admin;
-*/
