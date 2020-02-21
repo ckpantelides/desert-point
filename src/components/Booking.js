@@ -1,33 +1,33 @@
-import React from "react";
-import useBookingForm from "./CustomHooks";
-import axios from "axios";
+import React from 'react';
+import useBookingForm from './CustomHooks';
+import axios from 'axios';
 
 const Booking = () => {
   // callback function called after form below is submitted
   // sends input data to server via axios
   const booking = () => {
     alert(`Booking enquiry sent. Thanks ${inputs.name}`);
-
-    axios.post(`http://localhost:8000/post`, { inputs }).then(res => {
-      // console.log("Data sent to server");
-    });
+    axios
+      .post(`https://desert-point-server.herokuapp.com/post`, { inputs })
+      .then(res => {});
   };
 
+  // a useBookingForm hook will handle the input changes and input submission
   const { inputs, handleInputChange, handleSubmit } = useBookingForm(
-    { name: "", email: "", telephone: "", dates: "", package: "", message: "" },
+    { name: '', email: '', telephone: '', dates: '', package: '', message: '' },
     booking
   );
 
   return (
-    <section id="booking">
+    <section id='booking'>
       <h1>Booking enquiry</h1>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <div>
             <label>Name</label>
             <input
-              type="text"
-              name="name"
+              type='text'
+              name='name'
               onChange={handleInputChange}
               value={inputs.name}
               required
@@ -37,8 +37,8 @@ const Booking = () => {
           <div>
             <label>Email</label>
             <input
-              type="text"
-              name="email"
+              type='text'
+              name='email'
               onChange={handleInputChange}
               value={inputs.email}
               required
@@ -46,10 +46,10 @@ const Booking = () => {
           </div>
 
           <div>
-            <label htmlFor="telephone">Telephone</label>
+            <label htmlFor='telephone'>Telephone</label>
             <input
-              type="text"
-              name="telephone"
+              type='text'
+              name='telephone'
               onChange={handleInputChange}
               value={inputs.telephone}
             />
@@ -57,8 +57,8 @@ const Booking = () => {
           <div>
             <label>Dates</label>
             <input
-              type="text"
-              name="dates"
+              type='text'
+              name='dates'
               onChange={handleInputChange}
               value={inputs.dates}
             />
@@ -66,8 +66,8 @@ const Booking = () => {
           <div>
             <label>Package</label>
             <input
-              type="text"
-              name="package"
+              type='text'
+              name='package'
               onChange={handleInputChange}
               value={inputs.package}
             />
@@ -75,25 +75,25 @@ const Booking = () => {
           <div>
             <label>Message</label>
             <textarea
-              name="message"
+              name='message'
               onChange={handleInputChange}
               value={inputs.message}
             ></textarea>
           </div>
 
           <div>
-            <button type="submit">Submit</button>
+            <button type='submit'>Submit</button>
           </div>
         </fieldset>
       </form>
-      <a href="https://www.facebook.com/SurfHouseDesertPoint/" target="blank">
-        <img className="social-icon" src="images/f_logo.png" alt="facebook" />
+      <a href='https://www.facebook.com/SurfHouseDesertPoint/' target='blank'>
+        <img className='social-icon' src='images/f_logo.png' alt='facebook' />
       </a>
-      <a href="https://www.instagram.com/surfhousedesertpoint/" target="blank">
+      <a href='https://www.instagram.com/surfhousedesertpoint/' target='blank'>
         <img
-          className="social-icon"
-          src="images/insta_logo.png"
-          alt="instagram"
+          className='social-icon'
+          src='images/insta_logo.png'
+          alt='instagram'
         />
       </a>
     </section>

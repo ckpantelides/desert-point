@@ -1,23 +1,17 @@
-import React from "react";
+import React from 'react';
 // scrollspy detects which section is showing, and highlights the navbar items
 // appropriately
 // import Scrollspy from "react-scrollspy";
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 
 const Header = () => (
-  <header id="home">
-    <nav id="nav-wrap">
-      <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-        Show navigation
-      </a>
-      <a className="mobile-btn" href="#home" title="Hide navigation">
-        Hide navigation
-      </a>
-      <ul id="nav" className="nav">
+  <header id='home'>
+    <nav id='nav-wrap'>
+      <ul id='nav' className='nav'>
         <li>
           <Link
-            activeClass="active"
-            to="home"
+            activeClass='active'
+            to='home'
             spy={true}
             smooth={true}
             duration={500}
@@ -27,8 +21,8 @@ const Header = () => (
         </li>
         <li>
           <Link
-            activeClass="active"
-            to="about"
+            activeClass='active'
+            to='about'
             spy={true}
             smooth={true}
             duration={500}
@@ -38,8 +32,8 @@ const Header = () => (
         </li>
         <li>
           <Link
-            activeClass="active"
-            to="packages"
+            activeClass='active'
+            to='packages'
             spy={true}
             smooth={true}
             duration={500}
@@ -49,19 +43,19 @@ const Header = () => (
         </li>
         <li>
           <Link
-            activeClass="active"
-            to="booking"
+            activeClass='active'
+            to='booking'
             spy={true}
             smooth={true}
             duration={500}
           >
-            BOOKING/CONTACT
+            CONTACT
           </Link>
         </li>
       </ul>
     </nav>
-    <div className="row banner">
-      <div className="banner-text">
+    <div className='row banner'>
+      <div className='banner-text'>
         <h1>SURF CAMP</h1>
         <h1>MOKNARI</h1>
         <h1>MOROCCO</h1>

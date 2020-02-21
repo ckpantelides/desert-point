@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .App {
   text-align: center;
@@ -29,8 +29,8 @@ body {
 }
 
 button {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
@@ -52,7 +52,7 @@ header {
 
 /* vertically center banner section */
 header:before {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: middle;
   height: 100%;
@@ -76,76 +76,10 @@ header .banner-text {
 }
 
 header .banner-text h1 {
-  /*  font: 130px "opensans-bold", sans-serif; */
-  font: 90px "Montserrat", sans-serif;
-  /* font: 90px "Anton", sans-serif; */
+  font: 90px 'Montserrat', sans-serif;
   color: #fff;
   margin: 0px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-header .banner-text h3 {
-  font: 18px/1.9em "librebaskerville-regular", serif;
-  color: #a8a8a8;
-  margin: 0 auto;
-  width: 70%;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-header .banner-text h3 span,
-header .banner-text h3 a {
-  color: #fff;
-}
-
-header .banner-text hr {
-  width: 60%;
-  margin: 18px auto 24px auto;
-  border-color: #2f2d2e;
-  border-color: rgba(150, 150, 150, 0.1);
-}
-
-/* header social links */
-header .social {
-  margin: 24px 0;
-  padding: 0;
-  font-size: 30px;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-header .social li {
-  display: inline-block;
-  margin: 0 15px;
-  padding: 0;
-}
-header .social li a {
-  color: #fff;
-}
-header .social li a:hover {
-  color: #11abb0;
-}
-
-/* scrolldown link */
-header .scrolldown a {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -29px;
-  color: #fff;
-  display: block;
-  height: 42px;
-  width: 42px;
-  font-size: 42px;
-  line-height: 42px;
-  color: #fff;
-  border-radius: 100%;
-
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-header .scrolldown a:hover {
-  color: #11abb0;
 }
 
 /* ------------------------------------------------------------------ */
@@ -163,7 +97,7 @@ header .scrolldown a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-  font: 12px "opensans-bold", sans-serif;
+  font: 12px 'opensans-bold', sans-serif;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -176,11 +110,6 @@ header .scrolldown a:hover {
 
 .opaque {
   background-color: #333;
-}
-
-/* hide toggle button */
-#nav-wrap > a.mobile-btn {
-  display: none;
 }
 
 ul#nav {
@@ -200,7 +129,6 @@ ul#nav li {
 
 /* Links */
 ul#nav li a {
-  /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
   display: inline-block;
   padding: 8px 13px;
   line-height: 32px;
@@ -238,17 +166,8 @@ ul#nav li.current a {
   min-height: 100vh;
 }
 
-#about a,
-#about a:visited {
-  color: #fff;
-}
-#about a:hover,
-#about a:focus {
-  color: #11abb0;
-}
-
 #about h2 {
-  font: 22px/30px "opensans-bold", sans-serif;
+  font: 22px/30px 'opensans-bold', sans-serif;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -265,14 +184,26 @@ ul#nav li.current a {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
-#about .contact-details {
-  width: 41.66667%;
+#about .row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
 }
 
-#about .main-col {
-  padding-right: 5%;
+#about .column {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
 }
 
+#about .side {
+  width: 25%;
+}
+
+#about .main {
+  width: 67%;
+}
 /* ------------------------------------------------------------------ */
 /*  Packages
 /* ------------------------------------------------------------------ */
@@ -299,7 +230,7 @@ ul#nav li.current a {
 }
 
 #packages h2 {
-  font: 22px/30px "opensans-bold", sans-serif;
+  font: 22px/30px 'opensans-bold', sans-serif;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -353,8 +284,8 @@ ul#nav li.current a {
 #booking textarea {
   width: 300px;
   margin: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #booking textarea {
@@ -383,7 +314,7 @@ ul#nav li.current a {
 
 #admin {
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100vw;
   background: #c0c0c0;
   padding: 10px;
 }
@@ -435,10 +366,6 @@ ul#nav li.current a {
   font-size: 14px;
 }
 
-p.enquiry-footer {
-  /* padding-top: 10px; */
-}
-
 .read {
   background-color: rgb(244, 245, 171);
 }
@@ -460,234 +387,90 @@ p.enquiry-footer {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Grid
+/*  CSS for mobile
 /* ------------------------------------------------------------------ */
 
-.row {
-  width: 96%;
-  max-width: 1020px;
-  margin: 0 auto;
-}
-/* fixed width for IE8 */
-.ie .row {
-  width: 1000px;
-}
+@media screen and (max-width: 769px) {
+  /*-------------------*/
+  /* Header on mobile  */
+  /*-------------------*/
+  header .banner-text {
+    max-width: 100vw;
+    margin-top: 40px;
+    padding: 4em 0;
+  }
 
-.narrow .row {
-  max-width: 980px;
-}
+  header .banner-text h1 {
+    font-size: 3em;
+  }
 
-.row .row {
-  width: auto;
-  max-width: none;
-  margin: 0 -20px;
-}
+  /*-------------------*/
+  /* Nav on mobile     */
+  /*-------------------*/
+  ul#nav li a {
+    padding: 5px 7px;
+  }
 
-/* row clearing */
-.row:before,
-.row:after {
-  content: " ";
-  display: table;
-}
-.row:after {
-  clear: both;
-}
+  /*-------------------*/
+  /* About on mobile   */
+  /*-------------------*/
+  #about .main {
+    width: 100%;
+    padding: 0;
+  }
 
-.column,
-.columns {
-  position: relative;
-  padding: 0 20px;
-  min-height: 1px;
-  float: left;
-}
-.column.centered,
-.columns.centered {
-  float: none;
-  margin: 0 auto;
-}
+  #about .side {
+    width: 100%;
+    padding: 0 0 30px 0;
+  }
 
-/* removed gutters */
-.row.collapsed > .column,
-.row.collapsed > .columns,
-.column.collapsed,
-.columns.collapsed {
-  padding: 0;
-}
+  /*-------------------*/
+  /* Packages on mobile*/
+  /*-------------------*/
 
-[class*="column"] + [class*="column"]:last-child {
-  float: right;
-}
-[class*="column"] + [class*="column"].end {
-  float: right;
-}
+  #packages .package-container {
+    display: block;
+  }
 
-/* column widths */
-.row .one {
-  width: 8.33333%;
-}
-.row .two {
-  width: 16.66667%;
-}
-.row .three {
-  width: 25%;
-}
-.row .four {
-  width: 33.33333%;
-}
-.row .five {
-  width: 41.66667%;
-}
-.row .six {
-  width: 50%;
-}
-.row .seven {
-  width: 58.33333%;
-}
-.row .eight {
-  width: 66.66667%;
-}
-.row .nine {
-  width: 75%;
-}
-.row .ten {
-  width: 83.33333%;
-}
-.row .eleven {
-  width: 91.66667%;
-}
-.row .twelve {
-  width: 100%;
-}
+  #packages .package-item {
+    margin: 0 auto 15px auto;
+    height: auto;
+    padding: 3px 0 15px 0;
+    width: 80%;
+  }
 
-/* Offsets */
-.row .offset-1 {
-  margin-left: 8.33333%;
-}
-.row .offset-2 {
-  margin-left: 16.66667%;
-}
-.row .offset-3 {
-  margin-left: 25%;
-}
-.row .offset-4 {
-  margin-left: 33.33333%;
-}
-.row .offset-5 {
-  margin-left: 41.66667%;
-}
-.row .offset-6 {
-  margin-left: 50%;
-}
-.row .offset-7 {
-  margin-left: 58.33333%;
-}
-.row .offset-8 {
-  margin-left: 66.66667%;
-}
-.row .offset-9 {
-  margin-left: 75%;
-}
-.row .offset-10 {
-  margin-left: 83.33333%;
-}
-.row .offset-11 {
-  margin-left: 91.66667%;
-}
+  /*-------------------*/
+  /* Booking on mobile*/
+  /*-------------------*/
+  #booking fieldset {
+    width: auto;
+  }
 
-/* Push/Pull */
-.row .push-1 {
-  left: 8.33333%;
-}
-.row .pull-1 {
-  right: 8.33333%;
-}
-.row .push-2 {
-  left: 16.66667%;
-}
-.row .pull-2 {
-  right: 16.66667%;
-}
-.row .push-3 {
-  left: 25%;
-}
-.row .pull-3 {
-  right: 25%;
-}
-.row .push-4 {
-  left: 33.33333%;
-}
-.row .pull-4 {
-  right: 33.33333%;
-}
-.row .push-5 {
-  left: 41.66667%;
-}
-.row .pull-5 {
-  right: 41.66667%;
-}
-.row .push-6 {
-  left: 50%;
-}
-.row .pull-6 {
-  right: 50%;
-}
-.row .push-7 {
-  left: 58.33333%;
-}
-.row .pull-7 {
-  right: 58.33333%;
-}
-.row .push-8 {
-  left: 66.66667%;
-}
-.row .pull-8 {
-  right: 66.66667%;
-}
-.row .push-9 {
-  left: 75%;
-}
-.row .pull-9 {
-  right: 75%;
-}
-.row .push-10 {
-  left: 83.33333%;
-}
-.row .pull-10 {
-  right: 83.33333%;
-}
-.row .push-11 {
-  left: 91.66667%;
-}
-.row .pull-11 {
-  right: 91.66667%;
-}
+  #booking input,
+  #booking textarea {
+    width: 90%;
+  }
 
-/* block grids
---------------------------------------------------------------------- */
-.bgrid-sixths [class*="column"] {
-  width: 16.66667%;
-}
-.bgrid-quarters [class*="column"] {
-  width: 25%;
-}
-.bgrid-thirds [class*="column"] {
-  width: 33.33333%;
-}
-.bgrid-halves [class*="column"] {
-  width: 50%;
-}
+  /*-------------------*/
+  /* Admin on mobile   */
+  /*-------------------*/
+  #admin {
+    padding: 10px 0;
+  }
 
-[class*="bgrid"] [class*="column"] + [class*="column"]:last-child {
-  float: left;
-}
+  #admin h4 {
+    padding: 0 10px;
+  }
 
-/* Left clearing for block grid columns - columns that changes width in
-different screen sizes. Allows columns with different heights to align
-properly.
---------------------------------------------------------------------- */
-.first {
-  clear: left;
-} /* first column in default screen */
-.s-first {
-  clear: none;
-} /* first column in smaller screens */
+  .enquiry-card-container {
+    max-height: 80vh;
+  }
+
+  /*-------------------*/
+  /* Booking on mobile */
+  /*-------------------*/
+
+  #booking label {
+    text-align: center;
+  }
+}

@@ -33,7 +33,7 @@ const Packages = () => (
           <a href="#booking">Book now</a>
         </button>
       </div>
-      <div class="package-item">
+      <div className="package-item">
         <h2>SURF GUIDING</h2>
         <h3>€320</h3>
         <h4>for experienced surfers</h4>

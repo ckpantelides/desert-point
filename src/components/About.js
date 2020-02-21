@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const About = () => (
-  <section id="about">
-    <div className="row">
-      <div className="eight columns">
+  <section id='about'>
+    <div className='row'>
+      <div className='main column'>
         <h2>About</h2>
         <p>
           Want to experience a real Moroccan adventure and learn how to surf?
@@ -19,7 +19,7 @@ const About = () => (
         </p>
         <p>Surf camp Moknari, not only a surf school - a life experience!</p>
         <h2>Contact Details</h2>
-        <p className="address">
+        <p className='address'>
           <span>Desert Point Surf House</span>
           <br />
           <span> Moknari village</span>
@@ -31,12 +31,12 @@ const About = () => (
           <span>+212 611-833291</span>
         </p>
       </div>
-      <div className="three columns">
+      <div className='side column'>
         <h2>Our team</h2>
         <p>Hicham</p>
-        <img src="images/hicham.jpg" className="profile-pic" alt="Hicham" />
+        <img src='images/hicham.jpg' className='profile-pic' alt='Hicham' />
         <p>Faical</p>
-        <img src="images/faical.jpg" className="profile-pic" alt="Faical" />
+        <img src='images/faical.jpg' className='profile-pic' alt='Faical' />
       </div>
     </div>
   </section>
