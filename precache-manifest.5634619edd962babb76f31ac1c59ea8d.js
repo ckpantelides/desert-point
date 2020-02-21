@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e4bfd990d6f066a6e7824b682d640e9",
+    "revision": "ab378be84f5b4e67585d5c57a2bd8aba",
     "url": "/desert-point/index.html"
   },
   {
-    "revision": "c2143587d3bb088f2e17",
+    "revision": "4bdf03ea9e68f886533d",
     "url": "/desert-point/static/css/main.a4f58af4.chunk.css"
   },
   {
-    "revision": "6ceafc326e431c200135",
-    "url": "/desert-point/static/js/2.642ba590.chunk.js"
+    "revision": "6a067c35249e41d0d03e",
+    "url": "/desert-point/static/js/2.9a3a3930.chunk.js"
   },
   {
-    "revision": "c2143587d3bb088f2e17",
-    "url": "/desert-point/static/js/main.9cd3f584.chunk.js"
+    "revision": "4bdf03ea9e68f886533d",
+    "url": "/desert-point/static/js/main.cfb31baf.chunk.js"
   },
   {
     "revision": "727ea9bc2ba3f5ae1fbb",

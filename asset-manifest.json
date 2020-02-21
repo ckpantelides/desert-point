@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/desert-point/static/css/main.a4f58af4.chunk.css",
-    "main.js": "/desert-point/static/js/main.9cd3f584.chunk.js",
-    "main.js.map": "/desert-point/static/js/main.9cd3f584.chunk.js.map",
+    "main.js": "/desert-point/static/js/main.cfb31baf.chunk.js",
+    "main.js.map": "/desert-point/static/js/main.cfb31baf.chunk.js.map",
     "runtime-main.js": "/desert-point/static/js/runtime-main.7b1058c7.js",
     "runtime-main.js.map": "/desert-point/static/js/runtime-main.7b1058c7.js.map",
-    "static/js/2.642ba590.chunk.js": "/desert-point/static/js/2.642ba590.chunk.js",
-    "static/js/2.642ba590.chunk.js.map": "/desert-point/static/js/2.642ba590.chunk.js.map",
+    "static/js/2.9a3a3930.chunk.js": "/desert-point/static/js/2.9a3a3930.chunk.js",
+    "static/js/2.9a3a3930.chunk.js.map": "/desert-point/static/js/2.9a3a3930.chunk.js.map",
     "index.html": "/desert-point/index.html",
-    "precache-manifest.1d8d7702ce93d6856e438e3308997d78.js": "/desert-point/precache-manifest.1d8d7702ce93d6856e438e3308997d78.js",
+    "precache-manifest.5634619edd962babb76f31ac1c59ea8d.js": "/desert-point/precache-manifest.5634619edd962babb76f31ac1c59ea8d.js",
     "service-worker.js": "/desert-point/service-worker.js",
     "static/css/main.a4f58af4.chunk.css.map": "/desert-point/static/css/main.a4f58af4.chunk.css.map",
     "static/media/App.css": "/desert-point/static/media/homepage1.b5e60ade.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7b1058c7.js",
-    "static/js/2.642ba590.chunk.js",
+    "static/js/2.9a3a3930.chunk.js",
     "static/css/main.a4f58af4.chunk.css",
-    "static/js/main.9cd3f584.chunk.js"
+    "static/js/main.cfb31baf.chunk.js"
   ]
 }

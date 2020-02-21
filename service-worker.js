@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/desert-point/precache-manifest.1d8d7702ce93d6856e438e3308997d78.js"
+  "/desert-point/precache-manifest.5634619edd962babb76f31ac1c59ea8d.js"
 );
 
 self.addEventListener('message', (event) => {
