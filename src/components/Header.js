@@ -1,7 +1,5 @@
 import React from 'react';
-// scrollspy detects which section is showing, and highlights the navbar items
-// appropriately
-// import Scrollspy from "react-scrollspy";
+// react-scroll is used for smooth scrolling
 import { Link } from 'react-scroll';
 
 const Header = () => (
