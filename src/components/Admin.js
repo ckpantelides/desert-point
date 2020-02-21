@@ -9,10 +9,15 @@ const Admin = () => {
   const url = 'https://desert-point-server.herokuapp.com/enquiries';
   // setData will update data variable using useState
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   // retrieve enquiries from backend, assign to data variable
   useEffect(() => {
-    axios.get(url).then(json => setData(json.data));
+    setIsLoading(true);
+    axios.get(url).then(json => {
+      setData(json.data);
+      setIsLoading(false);
+    });
   }, []);
 
   // function to mark enquiries as "read". All enquiries are initially set as read:"false".
@@ -108,13 +113,17 @@ const Admin = () => {
         <img src='images/save.png' className='buttonIcon' alt='save' /> Save
         changes
       </button>
-      <SortableEnquiryContainer
-        axis='xy'
-        onSortEnd={onSortEnd}
-        items={data}
-        onSortStart={(_, event) => event.preventDefault()}
-        pressDelay='150'
-      />
+      {isLoading ? (
+        <div className='typing_loader'></div>
+      ) : (
+        <SortableEnquiryContainer
+          axis='xy'
+          onSortEnd={onSortEnd}
+          items={data}
+          onSortStart={(_, event) => event.preventDefault()}
+          pressDelay='150'
+        />
+      )}
     </div>
   );
 };
