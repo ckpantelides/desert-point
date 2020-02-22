@@ -170,6 +170,8 @@ ul#nav li.current a {
   font: 22px/30px 'opensans-bold', sans-serif;
   color: #fff;
   margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 #about p {
@@ -233,6 +235,8 @@ ul#nav li.current a {
   font: 22px/30px 'opensans-bold', sans-serif;
   color: #fff;
   margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 #packages h4 {
@@ -279,6 +283,8 @@ ul#nav li.current a {
 #booking h1 {
   color: white;
   font: 22px/30px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 #booking fieldset {
@@ -322,6 +328,12 @@ ul#nav li.current a {
   min-width: 100vw;
   background: #c0c0c0;
   padding: 10px;
+}
+
+#admin h1 {
+  font: 22px/30px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 .enquiry-save {
