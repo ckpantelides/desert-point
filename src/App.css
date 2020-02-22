@@ -276,6 +276,11 @@ ul#nav li.current a {
   min-height: 100vh;
 }
 
+#booking h1 {
+  color: white;
+  font: 22px/30px 'opensans-bold', sans-serif;
+}
+
 #booking fieldset {
   border: none;
 }
@@ -490,6 +495,11 @@ ul#nav li.current a {
     padding: 0 0 30px 0;
   }
 
+  #about p {
+    line-height: 20px;
+    padding: 0 10px;
+  }
+
   /*-------------------*/
   /* Packages on mobile*/
   /*-------------------*/
@@ -505,6 +515,11 @@ ul#nav li.current a {
     width: 80%;
   }
 
+  #packages p {
+    padding: 0 10px 20px 10px;
+    line-height: 20px;
+  }
+
   /*-------------------*/
   /* Booking on mobile*/
   /*-------------------*/
@@ -515,6 +530,10 @@ ul#nav li.current a {
   #booking input,
   #booking textarea {
     width: 90%;
+  }
+
+  #booking label {
+    text-align: center;
   }
 
   /*-------------------*/
@@ -533,16 +552,10 @@ ul#nav li.current a {
     /* flex-wrap: nowrap; */
   }
   /*
+  // Nowrap in container and flex below 
+  // will allow horizontal scrolling of enquiries
   .enquiry-card {
     flex: 0 0 200px;
   }
   */
-
-  /*-------------------*/
-  /* Booking on mobile */
-  /*-------------------*/
-
-  #booking label {
-    text-align: center;
-  }
 }
