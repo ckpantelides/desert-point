@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Installation
 
-## Available Scripts
+> npm install
 
-In the project directory, you can run:
+> npm run start (compiles for development)
 
-### `yarn start`
+> npm run build (compiles for production)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> npm run deploy (builds for production and then deploys it to a gh-pages hub, to allow for hosting by Github Pages)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Surf Camp Homepage & Admin page built with React
+===========
 
-### `yarn test`
+It's hosted [here](https://ckpantelides.github.io/desert-point)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The backend code used to handle booking enquiries is [here](https://github.com/ckpantelides/desert-point-server). (The backend stores booking enquiries made through contact section of the above website in a Postgresql database, and serves them to the Admin page below). 
 
-### `yarn build`
+The Admin page is [here](https://github.com/ckpantelides/deser-point/#/admin). This allows the owner of the surf camp to see any booking enquiries, drag and drop them to reorder them, and mark the enquiries as "read". The Admin page would normally be behind an authorisation page, but I've left it open for to demonstrate how it works.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Home page
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![img1]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Admin page
 
-### `yarn eject`
+![img2]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Code structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The main website has four sections - HomePage, About, Pages, Contact/Booking. Each section is a separate component. There are also components for the NavBar, CustomHooks and the Admin page. The NavBar uses [react-scroll](https://www.npmjs.com/package/react-scroll) for smooth scrolling when links are pressed. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The Booking section contains a form for users to send booking enquiries to the surf camp owners. The CustomHooks components looks for input changes and updates the "inputs" object which is sent to the backend accordingly. It also prevents the browser refreshing when the form is submitted.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The [Admin](https://github.com/ckpantelides/deser-point/#/admin) page retrieves any booking enquiries from the [backend](https://github.com/ckpantelides/desert-point-server) database. (The production version will hide the Admin route behind an auth page). Enquiries can be marked as "read", deleted and dragged and dropped into a new position. The [react-sortable-hocpage](https://www.npmjs.com/package/react-sortable-hoc) package handles the drag and drop function with [array-move](https://www.npmjs.com/package/array-move). The changes can then be saved in the postgresql database on the backend.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[img1]: https://github.com/ckpantelides/desert-point/blob/images/homepage350.png
+[img2]: https://github.com/ckpantelides/desert-point/blob/images/admin350.png
