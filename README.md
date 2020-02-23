@@ -1,13 +1,3 @@
-#### Installation
-
-> npm install
-
-> npm run start (compiles for development)
-
-> npm run build (builds for production)
-
-> npm run deploy (builds for production and deploys it to a new gh-pages branch, for hosting by Github Pages)
-
 Surf Camp Homepage & Admin page built with React
 ===========
 
@@ -40,6 +30,16 @@ As this is a static page, for the route to the Admin page to work I needed to us
 I used the [gh-pages](https://www.npmjs.com/package/gh-pages) package to help with deployment. It automatically creates a gh-pages branch and deletes all code outside of the build folder, and then moves the production code to the route of the gh-pages branch.
 
 After installing gh-pages I added "homepage": "https://ckpantelides.github.io/desert-point" to the pacakage.json file. In the scripts object of packaged.json I added predeploy and deploy scripts: "predeploy": "npm run build", "deploy": "gh-pages -d build". I then ran the command "npm run deploy" (I was getting errors with yarn). This command can be run from the master branch - there's no need to create a local gh-pages branch first.
+
+#### Installation
+
+> npm install
+
+> npm run start (compiles for development)
+
+> npm run build (builds for production)
+
+> npm run deploy (builds for production and deploys it to a new gh-pages branch, for hosting by Github Pages)
 
 [img1]: https://github.com/ckpantelides/desert-point/blob/images/homepage350.png
 [img2]: https://github.com/ckpantelides/desert-point/blob/images/admin350.png
