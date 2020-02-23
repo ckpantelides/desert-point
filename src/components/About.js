@@ -18,7 +18,7 @@ const About = () => (
           surfers, taking you to the best spots around
         </p>
         <p>Surf camp Moknari, not only a surf school - a life experience!</p>
-        <h2>Contact Details</h2>
+        <h3>Contact Details</h3>
         <p className='address'>
           <span>Desert Point Surf House</span>
           <br />
@@ -32,7 +32,7 @@ const About = () => (
         </p>
       </div>
       <div className='side column'>
-        <h2>Our team</h2>
+        <h3>Our team</h3>
         <p>Hicham</p>
         <img src='images/hicham.jpg' className='profile-pic' alt='Hicham' />
         <p>Faical</p>

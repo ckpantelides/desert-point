@@ -166,7 +166,8 @@ ul#nav li.current a {
   min-height: 100vh;
 }
 
-#about h2 {
+#about h2,
+#about h3 {
   font: 22px/30px 'opensans-bold', sans-serif;
   color: #fff;
   margin-bottom: 12px;
@@ -174,9 +175,13 @@ ul#nav li.current a {
   letter-spacing: 2.5px;
 }
 
+#about h3 {
+  font-size: 18px;
+}
+
 #about p {
   line-height: 30px;
-  color: #7a7a7a;
+  color: #929191;
 }
 
 #about .profile-pic {
@@ -231,12 +236,17 @@ ul#nav li.current a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+#packages h1,
 #packages h2 {
   font: 22px/30px 'opensans-bold', sans-serif;
   color: #fff;
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+}
+
+#packages h2 {
+  font-size: 18px;
 }
 
 #packages h4 {
@@ -246,7 +256,7 @@ ul#nav li.current a {
 
 #packages p {
   line-height: 30px;
-  color: #7a7a7a;
+  color: #929191;
   margin: 2px;
 }
 
@@ -281,7 +291,6 @@ ul#nav li.current a {
 }
 
 #booking h1 {
-  color: white;
   font: 22px/30px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -331,9 +340,13 @@ ul#nav li.current a {
 }
 
 #admin h1 {
-  font: 22px/30px 'opensans-bold', sans-serif;
+  font: 24px/32px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+}
+
+#admin h4 {
+  font: 16px 'opensans-bold', sans-serif;
 }
 
 .enquiry-save {
