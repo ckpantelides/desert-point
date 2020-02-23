@@ -3,7 +3,7 @@ Surf Camp Homepage & Admin page built with React
 
 It's hosted [here](https://ckpantelides.github.io/desert-point)
 
-The backend code used to handle booking enquiries is [here](https://github.com/ckpantelides/desert-point-server). (The backend stores booking enquiries made through "contact" section of the homepage in a postgresql database, and serves them to the Admin page - below - when needed). 
+The backend code used to handle booking enquiries is [here](https://github.com/ckpantelides/desert-point-server). (The backend stores booking enquiries made through the "contact" section of the homepage in a postgresql database, and then serves them to the Admin page - below - when needed). 
 
 The Admin page is [here](https://github.com/ckpantelides/deser-point/#/admin). This allows the owner of the surf camp to see any booking enquiries, to change their order with drag and drop, to mark them as "read" and to delete them. The Admin page would normally be a private route behind an authorisation page, but I've left it open for to demonstrate how it works.
 
