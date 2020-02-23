@@ -17,7 +17,7 @@ The Admin page is [here](https://github.com/ckpantelides/deser-point/#/admin). T
 
 #### Code structure
 
-The main website has four sections - HomePage, About, Pages, Contact/Booking. Each section is a separate component. There are also components for the NavBar, CustomHooks and the Admin page. The NavBar uses [react-scroll](https://www.npmjs.com/package/react-scroll) for smooth scrolling between sections when links are pressed. 
+The main website has four sections - HomePage, About, Packages, Contact/Booking. Each section is a separate component. There are also components for the NavBar, CustomHooks and the Admin page. The NavBar uses [react-scroll](https://www.npmjs.com/package/react-scroll) for smooth scrolling between sections when links are pressed. 
 
 The Booking section contains a form for users to send booking enquiries to the surf camp owners. The CustomHooks component looks for input changes and updates the "inputs" object accordingly, which is sent to the backend . It also prevents the browser refreshing when the form is submitted.
 
